@@ -65,4 +65,8 @@ class User extends Authenticatable
     {
         return (bool)$this->is_admin;
     }
+    public function creditValue()
+    {
+        return (int)$this->Credits->credits;
+    }
 }

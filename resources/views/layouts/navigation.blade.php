@@ -21,7 +21,7 @@
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 @if (auth()->user()->isAdmin() == false)
-                <p class="dark:text-gray-200 font-semibold text-gray-800">Credit: 80</p>
+                <p class="dark:text-gray-200 font-semibold text-gray-800">Credit: {{ auth()->user()->creditValue() }}</p>
                 @endif
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
